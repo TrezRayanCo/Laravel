@@ -1,0 +1,48 @@
+{
+  "name": "trez/raygan-sms",
+  "type": "library",
+  "description": "A simple API extension for send text message By Raygan Sms",
+  "keywords": [
+    "trez",
+    "raygansms"
+  ],
+  "support": {
+    "issues": "https://github.com/farhadmirzapour/RayganSms/issues",
+    "source": "https://github.com/farhadmirzapour/RayganSms"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Farhad Mirzapour",
+      "email": "farhad.mirzapour@gmail.com",
+      "homepage": "http://farhadnote.ir"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.6.4",
+    "illuminate/support": "*",
+    "illuminate/notifications": "*",
+    "guzzlehttp/guzzle": "*",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Trez\\RayganSms\\": "src/"
+    }
+  },
+  "config": {
+    "process-timeout": 0,
+    "sort-packages": true
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Trez\\RayganSms\\RayganSmsServiceProvider"
+      ],
+        "aliases": {
+            "RayganSms": "Trez\\RayganSms\\Facades"
+        }
+    }
+  }
+}
