@@ -48,8 +48,8 @@ class Sms
         $this->url_send_auth_code = 'https://smspanel.Trez.ir/SendMessageWithCode.ashx';
 
         $this->client = new HttpClient([
-            'timeout'         => 10,
-            'connect_timeout' => 10,
+            'timeout'         => 60,
+            'connect_timeout' => 60,
         ]);
     }
 
